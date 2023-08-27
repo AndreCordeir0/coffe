@@ -6,9 +6,9 @@ import Shop from '@/components/Shop'
 export default function Home() {
   return (
     <>
-      <head>
+      <header>
         <Header/>
-      </head>
+      </header>
       <main className="flex min-h-screen flex-col pt-7">
         <Descricao />
         <Shop />
