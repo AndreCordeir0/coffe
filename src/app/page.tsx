@@ -1,5 +1,6 @@
 import Descricao from '@/components/Descricao'
 import { Header } from '@/components/Header'
+import Shop from '@/components/Shop'
 
 
 export default function Home() {
@@ -8,8 +9,9 @@ export default function Home() {
       <head>
         <Header/>
       </head>
-      <main className="flex min-h-screen flex-col items-center justify-between pt-7">
+      <main className="flex min-h-screen flex-col pt-7">
         <Descricao />
+        <Shop />
       </main>
     </>
   )

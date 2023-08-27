@@ -7,7 +7,7 @@ export function Header(){
     const style:CSSProperties = {
         backgroundImage:`url(${coffee_image.src})`,
         height:'100%',
-        backgroundSize: '100%',
+        backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
         padding:'20px',
         objectFit:'cover',

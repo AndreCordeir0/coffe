@@ -1,0 +1,17 @@
+.main_label{
+    /* color: var(--coffee, #603809);
+    font-family: Playfair Display;
+    font-size: 16px;
+
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal; */
+
+    color: #707070;
+    font-family: Playfair Display;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 34px; /* 170% */
+    text-align: justify;
+}
