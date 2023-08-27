@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import header_style from './../app/style/header.module.css';
 import coffee_image from './../../public/coffee_image.png';
 import { CSSProperties } from 'react';
@@ -13,15 +12,15 @@ export function Header(){
         padding:'20px',
         objectFit:'cover',
         minHeight:'800px',
-        paddingLeft:'60px'
+        paddingLeft:'64px'
     };
     
     return (
         <>
-            <div className={`${header_style.header_container}`} style={style}>
+            <div className={`${header_style.header_container}` } style={style}>
                 <div className='flex flex-row justify-between'>
                     <label className={`${header_style.title_header} text-5xl`}>
-                        Coffe Shops TiA Rosa
+                        Coffe Shops Tia Rosa
                     </label>
                     <div>
                         <ul className='flex flex-row gap-4 text-lg'>

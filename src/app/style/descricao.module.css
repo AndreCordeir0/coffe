@@ -1,0 +1,16 @@
+.descricao{
+    color: #707070;
+    font-family: Playfair Display;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 34px; /* 170% */
+    max-width: 700px;
+    text-align: justify;
+}
+
+@media screen and (max-width: 741px) {
+    .coffe_image{
+        display: none !important;
+    }
+}
