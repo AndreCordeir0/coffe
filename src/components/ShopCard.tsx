@@ -28,7 +28,6 @@ export default function ShopCard(props:IShopCard){
         fontStyle: 'normal',
         lineHeight: 'normal',
         fontWeight: '500',
-
     }
     return(
         <div className='flex flex-col items-center w-60 bg-amber-50 border-amber-100 border-2'>
