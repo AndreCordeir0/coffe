@@ -12,6 +12,7 @@ import { CSSProperties } from 'react';
 
 
 interface IDiferenciais {
+    id:number;
     mainLabel:string;
     subTitle:string;
     src:string;
@@ -39,22 +40,26 @@ export default function Diferenciais(){
 
     const cards:IDiferenciais[] = [
         {
+            id:1,
             mainLabel:'Grãos divinos',
             subTitle:'Grãos que fornecem Sabor fantástico', 
             src:coffe_beans,
             backgroundColor:'bg-amber-100'
         },
         {
+            id:2,
             mainLabel:'Alta qualidade',
             subTitle:'Nós fornecemos a mais alta qualidade',
             src:badge
         },
         {
+            id:3,
             mainLabel:'Extraordinario',
             subTitle:'Café como você nunca provou',
             src:coffe_cup
         },
         {
+            id:4,
             mainLabel:'Melhores preços',
             subTitle:'Preços que cabem no seu bolso',
             src:best_price
@@ -68,9 +73,9 @@ export default function Diferenciais(){
                 <Image className={`${shop_style.image} absolute right-0`} src={coffee_blast_right.src} alt={""} width={300} height={100}/>
             </div>
             <div className='flex items-center justify-evenly flex-wrap gap-7 pt-14'>
-                {cards.map((card,i)=>{
+                {cards.map((card)=>{
                     return(
-                        <div key={i} className= {`flex flex-col w-60 bg-amber-50 border-amber-100 border-2 justify-center items-center gap-2 ${card.backgroundColor}`} style={{minHeight:'240px'}}>
+                        <div key={card.id} className= {`flex flex-col w-60 bg-amber-50 border-amber-100 border-2 justify-center items-center gap-2 ${card.backgroundColor}`} style={{minHeight:'240px'}}>
                             <Image src={card.src} alt={""} width={100} height={100}/>
                             <label style={style}>{card.mainLabel}</label>
                             <label style={style2}>{card.subTitle}</label>

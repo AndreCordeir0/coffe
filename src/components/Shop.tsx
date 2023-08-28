@@ -6,36 +6,44 @@ import macchiato_image from './../../public/macchiato.png';
 import ShopCard from './ShopCard';
 
 interface IShopCard {
-    cardName:string,
-    price:string,
-    src:string,
-    alt:string,
-    width?:number,
-    height?:number
+    id:number;
+    cardName:string;
+    price:string;
+    src:string;
+    alt:string;
+    width?:number;
+    height?:number;
 }
 
 
 export default function Shop(){
     const cards:IShopCard[] = [
         {
+            id:1,
+
             cardName:'Cappuccino',
             price:'6,00',
             src:cappucino_image.src,
             alt:'Cappuccino'
         },
         {
+            id:2,
+
             cardName:'Chai Latte',
             price:'12,00',
             src:chai_latte_image.src,
             alt:'Chai Latte'
         },
         {
+            id:3,
+
             cardName:'Macchiato',
             price:'14,00',
             src:macchiato_image.src,
             alt:'Macchiato'
         },
         {
+            id:4,
             cardName:'Expresso',
             price:'3,00',
             src:expresso_image.src,
@@ -57,9 +65,9 @@ export default function Shop(){
             <div className='pt-3'>
                 <ul className='flex items-center justify-evenly flex-wrap gap-7'>
                     {
-                        cards.map((card,i)=>{
+                        cards.map((card)=>{
                             return(
-                                <li key={i}>
+                                <li key={card.id}>
                                     <ShopCard {
                                         ...card}
                                     />
