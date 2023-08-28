@@ -15,3 +15,19 @@
     line-height: 34px; /* 170% */
     text-align: justify;
 }
+
+.image{
+    top: -85px;
+}
+
+@media screen and (max-width: 1060px){
+    .image{
+        top: 30px;
+    }
+}
+
+@media screen  and (max-width: 500px){
+    .image{
+        display: none;
+    }
+}

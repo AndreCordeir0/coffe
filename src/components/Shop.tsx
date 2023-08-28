@@ -45,7 +45,7 @@ export default function Shop(){
     return(
         <div>
             <div className='flex flex-col items-center'>
-                <label className={` text-amber-900 font-bold text-4xl`}>
+                <label className={`text-amber-900 font-bold text-4xl`}>
                     Desfrute de uma nova mistura de estilo de café
                 </label>
                 <label className={`${shop_style.main_label}`}>
@@ -55,7 +55,7 @@ export default function Shop(){
             </div>
 
             <div className='pt-3'>
-                <ul className='flex  items-center justify-evenly flex-wrap gap-7'>
+                <ul className='flex items-center justify-evenly flex-wrap gap-7'>
                     {
                         cards.map((card,i)=>{
                             return(
