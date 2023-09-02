@@ -13,7 +13,7 @@
 }
 
 html {
-  touch-action: pan-x pan-y;
+  /* touch-action: pan-x pan-y; */
   -webkit-tap-highlight-color: transparent;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;

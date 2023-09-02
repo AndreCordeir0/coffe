@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import './style/globals.css'
-import icon from '../../public/coffee-cup-1.svg'
 
 export const metadata = {
   title: 'Coffe Shops Tia Rosa',
