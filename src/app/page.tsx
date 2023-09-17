@@ -2,6 +2,7 @@
 
 import Descricao from '@/components/Descricao'
 import Diferenciais from '@/components/Diferenciais'
+import Footer from '@/components/Footer'
 import  Header  from '@/components/Header'
 import Shop from '@/components/Shop'
 
@@ -16,6 +17,7 @@ export default function Home() {
         <Descricao />
         <Shop />
         <Diferenciais />
+        <Footer />
       </main>
     </>
   )
