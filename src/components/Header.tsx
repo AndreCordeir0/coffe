@@ -1,24 +1,50 @@
 
-import { CSSProperties, useState } from 'react';
+import { CSSProperties, Dispatch, SetStateAction, useState } from 'react';
 import coffee_image from './../../public/coffee_image.png';
 import header_style from './../app/style/header.module.css';
 
 
 
 /**
- * menu em side bar responsivo
+ * Sidebar responsivo
+ * @param setSidebarOpen Função para fechar o sidebar
  * @returns 
  */
-function SidebarMenu(){
+function SidebarMenu(setSidebarOpen:Dispatch<SetStateAction<boolean>>){
+    function handleClick() {
+        setSidebarOpen(val => !val);
+    }
     return(
         <>
-            <div style={{background:'blue'}}>
-                Menu
+            <div className='fixed h-full w-3/5 flex flex-col z-20 bg-amber-800' style={{left:'0px',top:'0px'}}>
+                <div className='h-max flex flex-row justify-between p-4 text-white'>
+                        <ul className='flex flex-col gap-5 text-lg' >
+                            <li className='cursor-pointer'>
+                                Início
+                            </li>
+                            <li className='cursor-pointer'>
+                                Menu
+                            </li>
+                            <li className='cursor-pointer'>
+                                Sobre nós
+                            </li>
+                            <li className='cursor-pointer'> 
+                                Contatos
+                            </li>
+                        </ul>
+                        <button onClick={handleClick} className='self-start pr-5'>
+                            <svg width="100%" height="30px" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M17.657 6.34375L12.0001 12.0006M12.0001 12.0006L6.34326 17.6575M12.0001 12.0006L17.657 17.6575M12.0001 12.0006L6.34326 6.34375" stroke-width="2" stroke="currentColor"></path></svg>
+                        </button>
+                        
+                </div>
             </div>
         </>
     )
 }
-
+/**
+ * Header da aplicação
+ * @returns 
+ */
 export default function Header(){
     const [isSideBarOpen, setSidebarOpen] = useState<boolean>(false);
     function handleClick() {
@@ -76,7 +102,7 @@ export default function Header(){
                     </label>
                 </div>
             </div>
-           { isSideBarOpen && SidebarMenu()}
+           { isSideBarOpen && SidebarMenu(setSidebarOpen)}
         </>
     )
 }

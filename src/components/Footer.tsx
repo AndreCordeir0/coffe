@@ -1,3 +1,10 @@
+
+
+/**
+ * Footer da aplicação
+ * utiliza uma constante para exibir os dados na tela
+ * @returns retorna jsx element para renderização
+ */
 export default function Footer(){
     const footerContent = [
         {

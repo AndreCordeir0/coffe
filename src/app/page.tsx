@@ -6,7 +6,10 @@ import Footer from '@/components/Footer'
 import  Header  from '@/components/Header'
 import Shop from '@/components/Shop'
 
-
+/**
+ * Parte principal da aplicação onde contém todos os elementos.
+ * @returns 
+ */
 export default function Home() {
   return (
     <>

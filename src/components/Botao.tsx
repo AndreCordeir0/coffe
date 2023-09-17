@@ -1,6 +1,11 @@
 import { ReactNode } from "react"
 import botao_style from './../app/style/botao.module.css';
 
+/**
+ * Botão já estilizado para reutilizar na aplicação
+ * @param props 
+ * @returns 
+ */
 export default function Botao(props:IBotao){
     return(
         
